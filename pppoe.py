@@ -53,7 +53,7 @@ class Pppoe():
 
     def repppoe(self):
         try:
-            result = ''
+            result = b''
             result += check_output(cmd_stop)
             result += check_output(cmd_start)
             result += check_output(cmd_status)
